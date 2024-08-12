@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+select:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    border-radius: 50%;
+    border: 10px solid #4a90e2;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: #4a90e2;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hand {
+    position: absolute;
+    background: #4a90e2;
+    border-radius: 4px;
+    transform-origin: bottom center;
+    transition: transform 0.5s ease-out; 
+    bottom: 105px;
+}
+
+.hour-hand {
+    width: 6px;
+    height: 50px;
+}
+
+.minute-hand {
+    width: 4px;
+    height: 70px;
+}
+
+.second-hand {
+    width: 2px;
+    height: 90px;
+    background: red;
+}
+
+.number {
+    position: absolute;
+    font-size: 1rem;
+    color: #4a90e2;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.number-1 { top: 15%; left: 73%; }
+.number-2 { top: 30%; left: 85%; }
+.number-3 { top: 50%; left: 92%; }
+.number-4 { top: 70%; left: 85%; }
+.number-5 { top: 85%; left: 73%; }
+.number-6 { top: 92%; left: 50%; }
+.number-7 { top: 85%; left: 27%; }
+.number-8 { top: 70%; left: 15%; }
+.number-9 { top: 50%; left: 8%; }
+.number-10 { top: 30%; left: 15%; }
+.number-11 { top: 15%; left: 27%; }
+.number-12 { top: 8%; left: 50%; }
+
+#digital-clock {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #4a90e2;
+    font-weight: bold;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock</title>
+    <link rel="icon" href="images.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>World Clock</h1>
+    <select id="country-select">
+        <option value="America/New_York">United States</option>
+        <option value="Europe/London">United Kingdom</option>
+        <option value="Asia/Tokyo">Japan</option>
+        <option value="Australia/Sydney">Australia</option>
+        <option value="Europe/Berlin">Germany</option>
+        <option value="Asia/Shanghai">China</option>
+        <option value="Asia/Seoul">South Korea</option>
+        <option value="America/Sao_Paulo">Brazil</option>
+        <option value="Africa/Johannesburg">South Africa</option>
+        <option value="Asia/Dubai">United Arab Emirates</option>
+        <option value="Europe/Paris">France</option>
+        <option value="Europe/Rome">Italy</option>
+        <option value="America/Los_Angeles">United States (Pacific Time)</option>
+        <option value="Asia/Kolkata">India</option>
+        <option value="Asia/Manila">Philippines</option>
+        <option value="Egypt"> Egypt</option>
+    </select>
+    <div class="clock" id="clock">
+        <div class="number number-12">12</div>
+        <div class="number number-1">1</div>
+        <div class="number number-2">2</div>
+        <div class="number number-3">3</div>
+        <div class="number number-4">4</div>
+        <div class="number number-5">5</div>
+        <div class="number number-6">6</div>
+        <div class="number number-7">7</div>
+        <div class="number number-8">8</div>
+        <div class="number number-9">9</div>
+        <div class="number number-10">10</div>
+        <div class="number number-11">11</div>
+        <div class="hand hour-hand" id="hour-hand"></div>
+        <div class="hand minute-hand" id="minute-hand"></div>
+        <div class="hand second-hand" id="second-hand"></div>
+    </div>
+    <div id="digital-clock"></div>
+    <script src="clock.js"></script>
+</body>
+</html>
